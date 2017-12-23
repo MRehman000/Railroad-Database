@@ -1,0 +1,8 @@
+{% extends './head.html' %}
+
+{% block content %}
+{% for times in stop%}
+		<p>The train will arrive here at {{times.time_in}}</p>
+		{% endfor %}
+
+{% endblock %}

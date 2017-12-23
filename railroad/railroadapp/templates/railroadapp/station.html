@@ -1,0 +1,11 @@
+{% extends './head.html' %}
+
+
+{% block content %}
+<h1>These are our stations</h1>
+
+{% for stations in now %}
+		<p>The station is {{stations.station_name}}</p>
+		{% endfor %}
+
+{% endblock %}

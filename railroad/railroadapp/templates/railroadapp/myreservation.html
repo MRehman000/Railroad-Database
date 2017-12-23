@@ -1,0 +1,11 @@
+{% extends './head.html' %}
+
+{% block content %}
+<h2>You have the following reservations</h2>
+{% for res in passenger%}
+		<ul>
+			<li>Reservation is on {{res.reservation_date}}</li>
+		</ul>
+		{% endfor %}
+
+{% endblock %}

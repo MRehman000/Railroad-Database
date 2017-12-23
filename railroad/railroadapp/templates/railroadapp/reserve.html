@@ -1,0 +1,12 @@
+<a href = "/reserve"> Make a reservation </a>
+<br>
+<a href = "/station"> Check out all the stations </a>
+<br>
+<a href = "/trains"> See which trains are currently arriving </a>
+{% block content %}
+    <h1>New Reservation</h1>
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+{% endblock %}
