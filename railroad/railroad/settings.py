@@ -77,10 +77,10 @@ WSGI_APPLICATION = 'railroad.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'kiss131518',
-        'USER': 'root',
+        'NAME': 'railroad',
+        'USER': 'muh',
         'PASSWORD': 'dbpass1',
-        'HOST': '/cloudsql/sacred-analyst-185500:us-central1:kiss131518',
+        'HOST': '',
 
     }
 }
